@@ -454,7 +454,7 @@ footer{
     padding: 5px 10px;
    }
    .conteudo-rodape{
-    width: 90vw;
+    width: 70vw;
    }
    
 }
@@ -556,5 +556,8 @@ footer{
     }
     .mascara{
         display: block;
+    }
+    .oque{
+        margin-right: 30px;
     }
 }
