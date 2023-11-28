@@ -336,7 +336,7 @@ footer{
 .conteudo-rodape{
     margin-top: 20px;
     position: relative;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 .rodape p{
    margin-left: 26px;
@@ -453,9 +453,7 @@ footer{
     width: 85vw;
     padding: 5px 10px;
    }
-   .conteudo-rodape{
-    width: 70vw;
-   }
+   
    
 }
 @media (min-width:670px) and (max-width:999px){
@@ -470,9 +468,6 @@ footer{
         width: 99%;
     }
 
-    table{
-        display: none;
-    }
     .mascara{
     width: 0px;
     overflow: hidden;
@@ -514,6 +509,20 @@ footer{
     text-decoration: none;
     margin-top: 15px;
     margin-left: 5px;
+}
+.esperar{
+    width: 70%;
+    margin-left: 30px;
+}
+.conteudo-rodape{
+    width: 80%;
+}
+.rodape{
+    width: 80%;
+    margin: 0 0;
+}
+.rodape p{
+    font-size: 14px;
 }
 }
 @media (max-width:680px){
@@ -557,7 +566,7 @@ footer{
     .mascara{
         display: block;
     }
-    .oque{
-        margin-right: 30px;
+    table{
+        display: none;
     }
 }
