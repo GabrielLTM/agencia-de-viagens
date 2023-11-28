@@ -6,16 +6,46 @@
         <title>Agência de Viagens</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
     <body>  
         <header>
-          <div class="topo limitar-secao">
+          <div class = "container">
+          <div class="topo">
             <img src="imagens/local-logo.png" alt="">
             <a href="index.html">AGÊNCIA DE VIAGENS</a>
           </div>
+
+          <a class="menu"href="#abrir"><span class="material-symbols-outlined" id="burguer">menu</span></a>
+          
+      
+          <nav id="itens">
+            <a href="#orcamento">Orçamento</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#precos">Preços</a>
+            <a href="#contato">Contato</a>
+          </nav>
+   
+          </div>
         </header>
+
+        <div class="mascara" id="abrir">
+          <div class="fechar"> 
+            <a href="#fechar">Fechar</a> 
+          </div>
+          <nav class="menu-mobile">
+            <ul>
+              <li> <a href="#orcamento">Orçamento</a> </li>
+              <li> <a href="#sobre">Sobre Nós</a></li>
+              <li> <a href="#ofertas">Ofertas</a></li>
+              <li> <a href="#contato">Contato</a> </li>
+            </ul>
+          </nav>
+
+        </div>
         <main>
-        <section class="formulario">
+        <section class="formulario" id="orcamento">
             <div class="orcamento limitar-secao">
                 <img src="imagens/aviao.png" alt="">
                 <p>Solicite um orçamento</p></div>
@@ -140,7 +170,11 @@
         </section>
     </main>
     <!--Final do formulário e inicio das imagens-->
-    <section class="ofertas">
+    <section id ="sobre">
+        <h1>SOBRE A AGÊNCIA</h1>
+        <p>A mais de 20 anos a agência de viagens é lider em transportar pessoas e realizar sonhos por todo Brasil</p>
+    </section>
+    <section class="ofertas" id="ofertas">
       <div class="limitar-secao">
       <div class="inicio-ofertas ">
         <h1>Ofertas</h1>
@@ -202,8 +236,83 @@
         </div>
       </div>
     </section>
+    <section class="esperar">
+      <div class="oque">
+      <h1>O que esperar da agência?</h1>
+      <ul>
+        <li>Cuidado máximo com cumprimento de horário</li>
+        <li>Atenção com o atendimento</li>
+        <li>Conforto para o passageiro</li>
+        <li>Satisfação garantida</li>
+      </ul>
+    </div>
+    </section>
+    <!-- INICIO DA TABELA -->
+    <section id="precos">
+      <table>
+        <caption>Tabela de Preços e Cidade</caption>
+        <thead>
+          <tr>
+            <th>DE:</th>
+            <th>PARA:</th>
+            <th>GOIAS</th>
+            <th>AMAZONAS</th>
+            <th>RIO DE JANEIRO</th>
+            <th>MARANHÃO</th>
+            <th>SÃO PAULO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SÃO PAULO</td>
+            <td></td>
+            <td>R$259</td>
+            <td>R$389</td>
+            <td>R$261</td>
+            <td>R$212</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>GOIAS</td>
+            <td></td>
+            <td>---</td>
+            <td>R$437</td>
+            <td>R$480</td>
+            <td>R$319</td>
+            <td>R$259</td>
+          </tr>
+          <tr>
+            <td>AMAZONAS</td>
+            <td></td>
+            <td>R$437</td>
+            <td>---</td>
+            <td>R$543</td>
+            <td>R$468</td>
+            <td>R$389</td>
+          </tr>
+          <tr>
+            <td>RIO DE JANEIRO</td>
+            <td></td>
+            <td>R$480</td>
+            <td>R$543</td>
+            <td>---</td>
+            <td>R$299</td>
+            <td>R$261</td>
+          </tr>
+          <tr>
+            <td>MARANHÃO</td>
+            <td></td>
+            <td>R$319</td>
+            <td>R$468</td>
+            <td>R$299</td>
+            <td>---</td>
+            <td>R$212</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
     <!--Rodapé-->
-    <footer>
+    <footer id="contato">
       <div class="rodape limitar-secao">
       <div class="conteudo-rodape">
         <h3>Contato</h3>

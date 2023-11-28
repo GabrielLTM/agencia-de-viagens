@@ -10,6 +10,16 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
+/* TOPO */
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
 header{
     width: 100%;
     height: 50px;
@@ -24,11 +34,22 @@ header img{
     width: 32px;
     height: 32px;
 }
-header a{
+header .topo a{
     text-decoration: none;
     font-size: 24px;
     color: #5d15d1;
 }
+header nav a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    margin-left: 10px;
+    color: #5d15d1;
+}
+span#burguer{
+    color: #5d15d1;
+}
+/* FINAL DO TOPO INICIO DO FORMULARIO */
 .formulario{
     background: url(imagens/bahia.jpg) no-repeat center;
     background-size: cover;
@@ -133,6 +154,25 @@ button{
     cursor: pointer;
 }
 /* Final do Formulário */
+
+/* SECAO SOBRE */
+
+#sobre{
+    margin-top: 60px;
+    text-align: center;
+}
+#sobre h1{
+    color: #5d15d1;
+}
+#sobre p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* FINAL SECAO SOBRE */
+
+/* INICIO SECAO OFERTAS */
 .ofertas{
     height: 500px;
     width: 100%;
@@ -231,6 +271,55 @@ figcaption{
     margin-left: 30px;
     padding-top: 8px;
 }
+/* FINAL DE OFERTAS */
+.esperar h1{
+    color: #5d15d1;
+}
+.esperar ul{
+    margin-top: 15px;
+}
+.esperar li{
+    margin-top: 5px;
+
+font-weight: bold;}
+.oque{
+    max-width: 350px;
+    margin: 30px auto;
+}
+
+/* INICIO DA TABELA */
+table{
+    width: 60vw;
+}
+#precos table{
+    max-width: 1024px;
+    margin: 40px auto;
+}
+table caption{
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d15d1;
+    margin-bottom: 20px;
+}
+table th{
+    padding: 5px 15px;
+}
+table td{
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+table tr:nth-child(even){
+    background-color: white;
+}
+table tr:nth-child(odd){
+    background-color: #ddd;
+}
+table thead th{
+    background-color: white;
+}
+/* FINAL DA TABELA */
 /*RODAPÉ*/
 footer{
     height: 230px;
@@ -247,6 +336,7 @@ footer{
 .conteudo-rodape{
     margin-top: 20px;
     position: relative;
+    margin-left: 15px;
 }
 .rodape p{
    margin-left: 26px;
@@ -312,6 +402,19 @@ footer{
     width: 100%;
     margin-top: 20px;
 }
+.fechar{
+    display: none;
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.mascara{
+    display: none;
+}
+
 @media (max-width:1005px){
     .ofertas{
         height: auto;
@@ -359,9 +462,99 @@ footer{
     figcaption{
         width: 101%;
     }
+    
 }
 @media (max-width:480px){
+    
     figcaption{
         width: 99%;
+    }
+
+    table{
+        display: none;
+    }
+    .mascara{
+    width: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    
+    width: 100%;
+    right: 0;
+    left: 300px;    		
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    z-index: -1;	
+    transition: all 1s ease;
+}
+
+#abrir:target{
+    opacity: 1;
+    z-index: 9;		
+}
+.menu{
+    display: block;
+}
+.fechar{
+    display: block;
+}
+.fechar a{
+    color: red;
+    text-decoration: none;		
+    opacity: 9;
+    font-weight: bold;
+    margin-left: 5px;
+    
+}
+.menu-mobile li a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+}
+@media (max-width:680px){
+    header nav a{
+        display: none;
+    }
+    .mascara{
+        width: 0px;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        left: 300px;    		
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        opacity: 0;
+        z-index: -1;	
+        transition: all 1s ease;
+    }
+
+    #abrir:target{
+        opacity: 1;
+        z-index: 9;		 
+    }
+    .menu{
+        display: block;
+    }
+    .fechar{
+        display: block;
+    }
+    .fechar a{
+        color: red;
+        text-decoration: none;		
+        opacity: 9;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    .mascara{
+        display: block;
     }
 }
