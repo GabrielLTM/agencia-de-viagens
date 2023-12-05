@@ -509,6 +509,7 @@ footer{
     text-decoration: none;
     margin-top: 15px;
     margin-left: 5px;
+    
 }
 .esperar{
     width: 70%;
@@ -537,7 +538,7 @@ footer{
         bottom: 0;
         width: 100%;
         right: 0;
-        left: 300px;    		
+        left: 250px;    		
         height: 100vh;
         background: rgba(0, 0, 0, 0.75);
         color: #fff;
